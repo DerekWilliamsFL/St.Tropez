@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+/*************FONTS*************
+
+	LIST ITEMS: 1em;
+	HEADERS: 1.3em;
+	font-family: 'Lato', sans-serif;
+*/
+
+span {
+	font-family: ‘Lato’, Arial, serif; 
+	font-weight: 700;
+	font-size: 2em;
+}
+
+/*Offers going at the top of the screen*/
+
+body {
+	background-color: #EBE6E6;
+}
+
+.offer {
+	position: fixed:
+	top: 0;
+	background-color: black;
+	height: 20px;
+	color: white;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+nav {
+	height: 40px;
+	background-color: white;
+}
+
+nav ul {	
+	text-align: center;
+}
+nav ul li {
+	display: inline-block;
+	padding: 0.65em;
+}
+
+nav ul li a {
+		text-decoration: none;
+		color:black;
+}
+
+/****MAIN PAGE****/
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.frontpage {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.frontpage img {
+	width: 100%;
+}
+
+/**** SUMMER ****/
+.glasses {
+	margin-top: 50px;
+	font-size: 1.15em;
+	line-height: 1.6em;
+	text-align: justify;
+}
+
+.glasses img {
+	width: 30%;
+	float: left;
+	margin-right:40px;
+}
+
+.price {
+	text-align: center;
