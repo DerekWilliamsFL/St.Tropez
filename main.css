@@ -40,7 +40,7 @@ hr {
 background-color: #EBE6E6
 */
 body {
-	background-color: #EEDDCC;
+	background-color: #EDC;
 	margin-top: 20px;
 }
 
@@ -52,7 +52,7 @@ body {
 	height: 20px;
 	color: white;
 	text-align: center;
-	font-size: 0.9em;
+	font: 0.7em;
 	width: 100%;
 }
 
@@ -78,12 +78,14 @@ nav ul li a {
 		color:black;
 }
 /****MAIN PAGE****/
+
 .container {
 	width: 80%;
 	margin: 0 auto;
+	background-color: #EDC;
 }
 
-.container>img{
+.container img {
 	width: 100%;
 }
 
@@ -93,6 +95,7 @@ nav ul li a {
 	font-size: 1.15em;
 	line-height: 1.6em;
 	text-align: justify;
+	overflow: hidden;
 }
 
 .frontpage img {
@@ -102,20 +105,42 @@ nav ul li a {
 }
 
 /**** PRODUCTS ****/
-.border {
-	border: 1px solid black;
+.products {
 	overflow: hidden;
-	width: 1157px;
-	margin: 80px auto;
+	width: 80%;
+	margin: 10px auto;
 }
-.border div {
-	width: 385px;
-	height: 449px;
+.products div {
+	/*width: 385px;*/
+	width: 32.33%;
+	min-height: 400px;
+	margin: 0.5%;
 	float: left;
+	border: 2px solid black;
+	background-size: 100% 100%;
 }
+
+.products div:hover {
+	background-size: 100% 100%;
+}
+
+.product-offer {
+	background-color: white;
+	height: 25px;
+	color: black;
+	text-align: center;
+	font: 0.7em;
+	width: 99%;
+	margin: 5px auto;
+	margin-top: 60px;
+	border: 2px solid black;
+}
+
 /**** PRODUCT HOVERS ****/
+
+
 		.jersey {
-			background: url('images/jersey.jpg');
+			background: url('images/jersey.jpg') no-repeat;
 		}
 
 		.jersey:hover {
@@ -163,45 +188,183 @@ nav ul li a {
 
 		}
 
+		.blazer {
+			background: url('images/blazer.jpg');
+		}
+
+		.blazer:hover {
+			background: url('images/blazerhover.jpg')
+		}
+
+		.sunglasses {
+			background: url('images/sunglasses.jpg')
+		}
+
+		.sunglasses:hover {
+			background: url('images/sunglasseshover.jpg')
+		}
+
+		.tshirt {
+			background: url('images/tshirt.jpg')
+		}
+
+		.tshirt:hover {
+			background: url('images/tshirthover.jpg')
+		}
+
+		.knitter {
+			background: url('images/knitter.jpg')
+		}
+
+		.knitter:hover {
+			background: url('images/knitterhover.jpg')
+		}
+
+		.sweater {
+			background: url('images/sweater.jpg')
+		}
+
+		.sweater:hover {
+			background: url('images/sweaterhover.jpg')
+		}
+
+		.shorts {
+			background: url('images/shorts.jpg')
+		}
+
+		.shorts:hover {
+			background: url('images/shortshover.jpg')
+
+		}
+
 
 
 footer {
 	font-size: 0.9em;
 	clear: both;
-	background: white;
 }
 
 footer ul {
-	padding: 20px 60px;
 	text-align: center;
 }
 
 footer ul li.section {
 	list-style: none;
 	display: inline-block;
+	padding: 40px 100px;
 }
 
 footer ul li {
-	text-align: justify;
+	list-style: none;
+	text-align: left;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: black;
 }
 
 /**** MEDIA QUERIES ****/
 
-@media (max-width: 1375px) {
+/**** LANDSCAPE PHONE, PORTRAIT TABLET ****/
 
-	.border {
-		overflow: hidden;
-		width: 772px;
-		margin: 80px auto;
-	}		
+@media only screen and (max-width: 1024px), and (min-width: 321px) {
 
+	nav {
+		margin-top: 10px;
+	}
+
+	.container {
+		width: 95%;
+	}
+
+	.container img {
+		width: 100%;
+	}
+
+	.frontpage img {
+		width: 100%;	
+	}
+
+	figure h2 {
+		text-align: center;
+		line-height: 3em;
+		margin-bottom: -20px;
+	}
+
+	.price {
+		margin-top: 15px;
+	}
+	
+	.offer {
+		height: 20px;
+		line-height: 1.2em;
+	}
+
+	.offer p {
+		font-size: 0.65em;
+	}
+
+
+	.products {
+		margin: 0 auto;
+		width: 100%;
+
+	}
+
+	.products div {
+		width: 49%;
+		border: 2px solid black;
+		background-size: 100% 100%;
+		min-height: 350px;
+	}
+
+	.products div:hover {
+		background-size: 100% 100%;
+	}
+
+	footer ul {
+		text-align: center;
+	}
+
+	footer ul li.section {
+	list-style: none;
+	padding: 40px 20px;
+	}
 }
 
-@media (max-width: 900px) {
+/**** MOBILE ****/
+@media only screen and (max-width: 320px), and (max-device-width: 320px) {
 
-	.border {
-		overflow: hidden;
-		width: 387px;
-		margin: 80px auto;
-	}	
+	.offer {
+		height: 20px;
+	}
+
+	nav {
+		margin-top: 20px;
+	}
+
+	.frontpage {
+	font-size: 0.9em;
+	}
+	.container {
+		width: 100%;
+	}
+
+	.frontpage img {
+	width: 100%;
+	}
+
+	.products {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.products div {
+		width: 99%;
+		border: 2px solid black;
+		background-size: 100% 100%;
+		min-height: 350px;
+	}
 }
+
