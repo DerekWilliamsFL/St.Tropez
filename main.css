@@ -104,6 +104,15 @@ nav ul li a {
 	margin-right: 40px;
 }
 
+.frontpage h2 {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.frontpage h3 {
+	padding-top: 50px;
+}
+
 /**** PRODUCTS ****/
 .products {
 	overflow: hidden;
@@ -111,9 +120,8 @@ nav ul li a {
 	margin: 10px auto;
 }
 .products div {
-	/*width: 385px;*/
 	width: 32.33%;
-	min-height: 400px;
+	height: 385px;
 	margin: 0.5%;
 	float: left;
 	border: 2px solid black;
@@ -316,7 +324,7 @@ footer ul li a {
 		width: 49%;
 		border: 2px solid black;
 		background-size: 100% 100%;
-		min-height: 350px;
+		min-height: 300px;
 	}
 
 	.products div:hover {
@@ -352,7 +360,7 @@ footer ul li a {
 	}
 
 	.frontpage img {
-	width: 100%;
+		width: 100%;
 	}
 
 	.products {
