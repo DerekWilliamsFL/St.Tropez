@@ -116,12 +116,13 @@ nav ul li a {
 /**** PRODUCTS ****/
 .products {
 	overflow: hidden;
-	width: 80%;
+	width: 70%;
+
 	margin: 10px auto;
 }
 .products div {
 	width: 32.33%;
-	height: 385px;
+	min-height: 385px;
 	margin: 0.5%;
 	float: left;
 	border: 2px solid black;
@@ -276,7 +277,7 @@ footer ul li a {
 
 /**** LANDSCAPE PHONE, PORTRAIT TABLET ****/
 
-@media only screen and (max-width: 1024px), and (min-width: 321px) {
+@media only screen and (max-width: 1024px), and (min-width: 481px) {
 
 	nav {
 		margin-top: 10px;
@@ -321,10 +322,12 @@ footer ul li a {
 	}
 
 	.products div {
-		width: 49%;
+		width: 40%;
+		margin-left: 4%;
+		margin-right: 4%;
 		border: 2px solid black;
 		background-size: 100% 100%;
-		min-height: 300px;
+		min-height: 380px;
 	}
 
 	.products div:hover {
@@ -342,7 +345,7 @@ footer ul li a {
 }
 
 /**** MOBILE ****/
-@media only screen and (max-width: 320px), and (max-device-width: 320px) {
+@media only screen and (max-width: 480px), and (max-device-width: 480px) {
 
 	.offer {
 		height: 20px;
@@ -369,7 +372,8 @@ footer ul li a {
 	}
 
 	.products div {
-		width: 99%;
+		width: 80%;
+		margin-left: 10%;
 		border: 2px solid black;
 		background-size: 100% 100%;
 		min-height: 350px;
