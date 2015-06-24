@@ -380,3 +380,38 @@ footer ul li a {
 	}
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    
+    	.offer {
+		height: 20px;
+	}
+
+	nav {
+		margin-top: 20px;
+	}
+
+	.frontpage {
+	font-size: 0.9em;
+	}
+	.container {
+		width: 100%;
+	}
+
+	.frontpage img {
+		width: 100%;
+	}
+
+	.products {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.products div {
+		width: 80%;
+		margin-left: 10%;
+		border: 2px solid black;
+		background-size: 100% 100%;
+		min-height: 350px;
+	}
+}
+
