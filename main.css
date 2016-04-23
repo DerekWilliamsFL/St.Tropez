@@ -27,18 +27,11 @@ hr {
 	height: 0.3em;
 	background-color: black;
 }
-
-/*Offers going at the top of the screen*/
-
-/**** CLEARFIX ****/
 .clear {
 	clear: both;
 	overflow: hidden;
 }
 
-/**** OLD COLOR ****
-background-color: #EBE6E6
-*/
 body {
 	background-color: #EDC;
 	margin-top: 20px;
@@ -77,7 +70,6 @@ nav ul li a {
 		text-decoration: none;
 		color:black;
 }
-/****MAIN PAGE****/
 
 .container {
 	width: 80%;
@@ -110,7 +102,7 @@ nav ul li a {
 }
 
 .frontpage h3 {
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
 /**** PRODUCTS ****/
@@ -141,7 +133,7 @@ nav ul li a {
 	font: 0.7em;
 	width: 99%;
 	margin: 5px auto;
-	margin-top: 60px;
+	margin-top: 20px;
 	border: 2px solid black;
 }
 
@@ -277,7 +269,7 @@ footer ul li a {
 
 /**** LANDSCAPE PHONE, PORTRAIT TABLET ****/
 
-@media only screen and (max-width: 1024px), and (min-width: 481px) {
+@media only screen and (max-width: 1024px) {
 
 	nav {
 		margin-top: 10px;
@@ -292,17 +284,18 @@ footer ul li a {
 	}
 
 	.frontpage img {
-		width: 100%;	
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;	
 	}
 
-	figure h2 {
+	.frontpage h2 {
 		text-align: center;
-		line-height: 3em;
-		margin-bottom: -20px;
+		padding-top: 310px;
 	}
 
 	.price {
-		margin-top: 15px;
+		margin-top: 0px;
 	}
 	
 	.offer {
@@ -322,12 +315,10 @@ footer ul li a {
 	}
 
 	.products div {
-		width: 40%;
-		margin-left: 4%;
-		margin-right: 4%;
+		width: 31%;
 		border: 2px solid black;
 		background-size: 100% 100%;
-		min-height: 310px;
+		min-height: 320px;
 	}
 
 	.products div:hover {
@@ -363,7 +354,9 @@ footer ul li a {
 	}
 
 	.frontpage img {
-		width: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 
 	.products {
@@ -371,18 +364,23 @@ footer ul li a {
 		width: 100%;
 	}
 
+	.frontpage h2 {
+		text-align: center;
+		padding-top: 320px;
+	}
+
 	.products div {
-		width: 80%;
-		margin-left: 10%;
+		width: 42%;
+		margin-left: 5%;
+		min-height: 250px;
 		border: 2px solid black;
 		background-size: 100% 100%;
-		height: 300px;
 	}
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
     
-    	.offer {
+    .offer {
 		height: 20px;
 	}
 
@@ -398,7 +396,9 @@ footer ul li a {
 	}
 
 	.frontpage img {
-		width: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 
 	.products {
@@ -407,11 +407,10 @@ footer ul li a {
 	}
 
 	.products div {
-		width: 80%;
-		margin-left: 10%;
+		width: 42%;
+		min-height: 250px;
+		margin-left: 5%;
 		border: 2px solid black;
 		background-size: 100% 100%;
-		height: 300px;
 	}
 }
-
